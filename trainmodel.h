@@ -5,6 +5,7 @@
 #include <Apollo.h>
 #include "adddense.h"
 #include "addsigmoid.h"
+#include "train.h"
 namespace Ui {
 class TrainModel;
 }
@@ -22,11 +23,14 @@ private slots:
     void on_pushButton_3_clicked();
     void on_pushButton_2_clicked();
 
+    void on_pushButton_4_clicked();
+
 protected:
     Apollo::Model* model;
     Apollo::Dataloader* data;
     AddSigmoid* addSig;
     AddDense* addDense;
+    Train* train;
 private:
     Ui::TrainModel *ui;
 

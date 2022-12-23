@@ -27,6 +27,7 @@ set(PROJECT_SOURCES
         trainmodel.h trainmodel.cpp trainmodel.ui
         adddense.h adddense.cpp adddense.ui
         addsigmoid.h addsigmoid.cpp addsigmoid.ui
+        train.h train.cpp train.ui
     )
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(test1
