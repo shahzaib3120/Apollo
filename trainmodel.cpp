@@ -27,3 +27,10 @@ void TrainModel::on_pushButton_3_clicked()
     model = new Apollo::Model(data->getTrainDataShape(), false, 0.01, 1);
 }
 
+
+void TrainModel::on_pushButton_2_clicked()
+{
+    addSig = new AddSigmoid(model, this);
+    addSig->exec();
+}
+
