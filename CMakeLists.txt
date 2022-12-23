@@ -23,7 +23,11 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        Apollo-backend/Layers/Layer.cpp Apollo-backend/Layers/Layer.h Apollo-backend/Layers/Dense.cpp Apollo-backend/Layers/Dense.h Apollo-backend/Layers/Sigmoid.cpp Apollo-backend/Layers/Sigmoid.h Apollo-backend/Layers/Softmax.cpp Apollo-backend/Layers/Softmax.h Apollo-backend/Utils/Dataloader.cpp Apollo-backend/Utils/Dataloader.h Apollo-backend/Loss/Loss.cpp Apollo-backend/Model/Model.cpp Apollo-backend/Model/Model.h Apollo-backend/Loss/Loss.h Apollo-backend/Utils/linalg.h Apollo-backend/Utils/linalg.cpp Apollo-backend/Preprocessing/Preprocessing.h Apollo-backend/Preprocessing/Preprocessing.cpp Apollo-backend/Apollo.h )
+        Apollo-backend/Layers/Layer.cpp Apollo-backend/Layers/Layer.h Apollo-backend/Layers/Dense.cpp Apollo-backend/Layers/Dense.h Apollo-backend/Layers/Sigmoid.cpp Apollo-backend/Layers/Sigmoid.h Apollo-backend/Layers/Softmax.cpp Apollo-backend/Layers/Softmax.h Apollo-backend/Utils/Dataloader.cpp Apollo-backend/Utils/Dataloader.h Apollo-backend/Loss/Loss.cpp Apollo-backend/Model/Model.cpp Apollo-backend/Model/Model.h Apollo-backend/Loss/Loss.h Apollo-backend/Utils/linalg.h Apollo-backend/Utils/linalg.cpp Apollo-backend/Preprocessing/Preprocessing.h Apollo-backend/Preprocessing/Preprocessing.cpp Apollo-backend/Apollo.h
+        trainmodel.h trainmodel.cpp trainmodel.ui
+        adddense.h adddense.cpp adddense.ui
+        addsigmoid.h addsigmoid.cpp addsigmoid.ui
+    )
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(test1
         MANUAL_FINALIZATION
