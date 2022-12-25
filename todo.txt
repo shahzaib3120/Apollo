@@ -1,0 +1,2 @@
+check get shape function in add sigmoid window
+code cleanup and rename

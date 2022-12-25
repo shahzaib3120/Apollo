@@ -1,6 +1,7 @@
 #include "trainmodel.h"
 #include "ui_trainmodel.h"
 #include <QFileDialog>
+#include <QMessageBox>
 TrainModel::TrainModel(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::TrainModel)
@@ -43,5 +44,13 @@ void TrainModel::on_pushButton_4_clicked()
     // trigger train
     train = new Train(model, data, this);
     train->exec();
+}
+
+
+void TrainModel::on_pushButton_5_clicked()
+{
+    // evalate the model
+    QMessageBox::information(this, "Evaluate Model","Model Loss: "+QString::number(model->evaluate(data->getValData(), data->getValLabels(), Apollo::BCE)));
+
 }
 
